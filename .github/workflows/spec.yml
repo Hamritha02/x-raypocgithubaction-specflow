@@ -13,3 +13,4 @@ jobs:
           test-assembly-path: MySpecflowProject/bin/Release/netcoreapp3.1
           test-assembly-dll: MySpecflowProject.dll
           output-html: MyTestResults.html
+          framework: net6.0
