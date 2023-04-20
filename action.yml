@@ -43,15 +43,15 @@ inputs:
     default: 'false'
   logger:
     description: "Dotnet test logger to run in addition to Specflow Test Logger (example: trx)"
-    required: false
+    required: true
     default: 'null'
-  logger-file-name:
+  logger-file-name: 
     description: "Dotnet test log file name; required if logger is defined (example: MyTestResults.trx)"
-    required: false
+    required: true
     default: 'null'
   upload-artifact:
     description: "Set to false to disable uploading <LivingDoc.html> artifact automatically"
-    required: false
+    required: true
     default: 'true'
 runs:
   using: composite
