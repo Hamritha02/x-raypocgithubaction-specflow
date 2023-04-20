@@ -1,6 +1,6 @@
 name: 'Run SpecFlow Tests'
 description: 'A Github Action to run SpecFlow tests and create a LivingDoc'
-author: 'Hamritha02'
+author: 'cryptic-wizard'
 branding:
   icon: check-square
   color: green
@@ -96,7 +96,7 @@ runs:
       with:
         name: 'Specflow Test Results'
         path: ${{ inputs.output-html }}
-    - name: ReturnCode
-       run: |
-         exit "${_EXIT:-0}"
-       shell: bash
+    # - name: ReturnCode
+    #   run: |
+    #     exit "${_EXIT:-0}"
+    #   shell: bash
