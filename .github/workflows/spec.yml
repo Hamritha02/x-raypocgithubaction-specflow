@@ -8,8 +8,8 @@ jobs:
       - uses: actions/setup-dotnet@v3
         with:
          dotnet-version: '6.0.x'
-      - uses: ./
+      - uses: actions/Hamritha02/run-specflow-tests@v1.3.1
         with:
-          test-assembly-path: RunSpecflowTests/bin/Release/net6.0
-          test-assembly-dll: RunSpecflowTests.dll
+          test-assembly-path: MySpecflowProject/bin/Release/netcoreapp3.1
+          test-assembly-dll: MySpecflowProject.dll
           output-html: MyTestResults.html
